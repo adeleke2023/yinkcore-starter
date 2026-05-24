@@ -1,0 +1,51 @@
+#============================================================
+#   	Infrastructure Contains technical implementations.
+#============================================================
+
+
+Examples:
+	- JWT implementation
+	- Redis implementation
+	- PostgreSQL implementation
+	- Kafka implementation later
+
+This separation is extremely important.
+
+it contains different infrastructures packages such as:
+	├── persistence/
+    ├── security/
+    ├── messaging/
+    ├── cache/
+    ├── email/
+    └── storage/
+	
+	
+* Infrastructure Modules 🔥
+
+These are technical implementations.
+
+infrastructure/security
+	Contains:
+		- JWT provider
+		- token parser
+		- security filters
+		- password encoder
+
+infrastructure/persistence
+	Contains:
+		- JPA base configs
+		- auditing support
+		- entity listeners
+		- database configs
+
+
+infrastructure/cache
+	Contains:
+		- Redis config
+		- caching abstraction
+
+
+infrastructure/email
+	Contains:
+		- SMTP implementation
+		- email provider abstraction

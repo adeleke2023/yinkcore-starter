@@ -1,0 +1,14 @@
+#============================================================
+#		Modules Contains business capabilities.
+#============================================================
+
+
+This is your actual domain/business logic.
+
+It contains different modules such as:
+	├── auth/
+    ├── user/
+    ├── notification/
+	├── audit/
+	├── admin/
+	└── shared-kernel/

@@ -1,0 +1,30 @@
+#======================================================
+#		App Contains deployable applications
+#======================================================
+
+Entry applications (API server now, other apps later)
+
+for Monolith Stage:
+	- api-server
+	
+	
+	
+for Micro-services:
+	- admin-api
+	- worker-service
+	- gateway
+	- scheduler
+
+
+* Why API Server Exists...
+
+	The API server:
+
+		wires modules together
+		bootstraps Spring
+		exposes REST endpoints
+		loads configurations
+
+		This keeps modules framework-independent.
+
+		Very important.

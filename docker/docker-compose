@@ -1,0 +1,20 @@
+version: '1.0.0'
+
+services:
+
+  postgres:
+    image: postgres:16
+
+    environment:
+      POSTGRES_DB: yinkcore
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+
+    ports:
+      - "5432:5432"
+
+  redis:
+    image: redis:7
+
+    ports:
+      - "6379:6379"

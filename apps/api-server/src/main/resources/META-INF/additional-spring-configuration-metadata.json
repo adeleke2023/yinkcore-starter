@@ -1,0 +1,42 @@
+{"properties": [
+  {
+    "name": "app.author.name",
+    "type": "java.lang.String",
+    "description": "A description for 'app.author.name'"
+  },
+  {
+    "name": "app.author.email",
+    "type": "java.lang.String",
+    "description": "A description for 'app.author.email'"
+  },
+  {
+    "name": "app.author.name",
+    "type": "java.lang.String",
+    "description": "A description for 'app.author.name'"
+  },
+  {
+    "name": "spring.security.jwt.secret-key",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.security.jwt.secret-key'"
+  },
+  {
+    "name": "spring.security.jwt.access-token-expiration",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.security.jwt.access-token-expiration'"
+  },
+  {
+    "name": "spring.security.jwt.refresh-token-expiration",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.security.jwt.refresh-token-expiration'"
+  },
+  {
+    "name": "spring.flyway.enabled",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.flyway.enabled'"
+  },
+  {
+    "name": "spring.flyway.locations",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.flyway.locations'"
+  }
+]}

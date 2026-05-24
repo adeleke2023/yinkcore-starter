@@ -1,0 +1,7 @@
+C:\Users\Mine\Desktop\Spring Workspace\YMT-Enterprise-Architecture-Starter\ymt-starter\modules\user\src\main\java\com\yinkcore\user\domain\model\User.java
+C:\Users\Mine\Desktop\Spring Workspace\YMT-Enterprise-Architecture-Starter\ymt-starter\modules\user\src\main\java\com\yinkcore\user\domain\model\UserStatus.java
+C:\Users\Mine\Desktop\Spring Workspace\YMT-Enterprise-Architecture-Starter\ymt-starter\modules\user\src\main\java\com\yinkcore\user\domain\repository\UserRepository.java
+C:\Users\Mine\Desktop\Spring Workspace\YMT-Enterprise-Architecture-Starter\ymt-starter\modules\user\src\main\java\com\yinkcore\user\infrastructure\persistence\UserJpaEntity.java
+C:\Users\Mine\Desktop\Spring Workspace\YMT-Enterprise-Architecture-Starter\ymt-starter\modules\user\src\main\java\com\yinkcore\user\infrastructure\persistence\UserJpaRepository.java
+C:\Users\Mine\Desktop\Spring Workspace\YMT-Enterprise-Architecture-Starter\ymt-starter\modules\user\src\main\java\com\yinkcore\user\infrastructure\persistence\UserMapper.java
+C:\Users\Mine\Desktop\Spring Workspace\YMT-Enterprise-Architecture-Starter\ymt-starter\modules\user\src\main\java\com\yinkcore\user\infrastructure\persistence\UserRepositoryAdapter.java

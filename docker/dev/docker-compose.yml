@@ -1,0 +1,57 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:16
+    container_name: ymt-db
+    environment:
+      POSTGRES_DB: ymt_db
+      POSTGRES_USER: ymt_user
+      POSTGRES_PASSWORD: ymt_password
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ymt_user"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  redis:
+    image: redis:7-alpine
+    container_name: ymt-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  app:
+    build:
+      context: ../../
+      dockerfile: apps/api-server/Dockerfile  #docker/dev/Dockerfile 
+    container_name: ymt-app
+    ports:
+      - "8080:8080"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/ymt_db
+      SPRING_DATASOURCE_USERNAME: ymt_user
+      SPRING_DATASOURCE_PASSWORD: ymt_password
+      SPRING_REDIS_HOST: redis
+      SPRING_REDIS_PORT: 6379
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    volumes:
+      - ../../:/app
+
+volumes:
+  postgres_data:
+  redis_data:
