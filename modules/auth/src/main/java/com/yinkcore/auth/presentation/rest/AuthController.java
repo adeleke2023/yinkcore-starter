@@ -6,20 +6,20 @@ import com.yinkcore.auth.infrastructure.adapter.application.dto.RegisterRequest;
 import com.yinkcore.auth.infrastructure.adapter.application.service.LoginService;
 import com.yinkcore.auth.infrastructure.adapter.application.service.RegisterService;
 import com.yinkcore.shared.application.response.ApiResponse;
+import jakarta.validation.Valid;
 import org.springframework.web.bind.annotation.*;
 
-
 /**
- * AuthController is a REST controller that handles authentication-related HTTP requests.
- * It provides endpoints for user registration and login, delegating the business logic to the RegisterService and LoginService respectively.
- * The controller uses ApiResponse to standardize the response format for both successful and error responses.
+ * AuthController is a REST controller that handles authentication-related HTTP requests. It
+ * provides endpoints for user registration and login, delegating the business logic to the
+ * RegisterService and LoginService respectively. The controller uses ApiResponse to standardize the
+ * response format for both successful and error responses.
  *
  * @see RegisterRequest
  * @see LoginRequest
  * @see AuthResponse
  * @see RegisterService
  * @see LoginService
- *
  * @since 2026-05-22
  * @version 1.0.0
  * @author Young Lecturer
@@ -38,7 +38,7 @@ public class AuthController {
   }
 
   @PostMapping("/register")
-  public ApiResponse<Void> register(@RequestBody RegisterRequest request) {
+  public ApiResponse<Void> register(@Valid @RequestBody RegisterRequest request) {
 
     registerService.register(request);
 
@@ -46,7 +46,7 @@ public class AuthController {
   }
 
   @PostMapping("/login")
-  public ApiResponse<AuthResponse> login(@RequestBody LoginRequest request) {
+  public ApiResponse<AuthResponse> login(@Valid @RequestBody LoginRequest request) {
 
     return ApiResponse.success("Login successful", loginService.login(request));
   }

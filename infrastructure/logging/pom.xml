@@ -9,7 +9,7 @@
         <relativePath>../../pom.xml</relativePath>
     </parent>
 
-    <artifactId>audit</artifactId>
+    <artifactId>logging</artifactId>
 
     <dependencies>
 
@@ -20,5 +20,6 @@
         </dependency>
 
     </dependencies>
+
 
 </project>

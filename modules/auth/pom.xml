@@ -19,6 +19,12 @@
             <artifactId>spring-context</artifactId>
         </dependency>
 
+        <!-- Validation -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-validation</artifactId>
+		</dependency>
+
         <!-- shared-kernel -->
         <dependency>
             <groupId>com.yinkcore</groupId>

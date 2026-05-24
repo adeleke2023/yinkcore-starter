@@ -61,6 +61,7 @@
         <!-- Infrastructure -->
         <module>infrastructure/security</module>
         <module>infrastructure/persistence</module>
+        <module>infrastructure/logging</module>
         <!-- <module>infrastructure/cache</module>
         <module>infrastructure/email</module> -->
 

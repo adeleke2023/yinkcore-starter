@@ -1,0 +1,70 @@
+# Application Properties for API Server
+spring:
+    application:
+        name: yinkcore-api   
+
+# security configuration
+    security:
+        user:
+            name: dev
+            password: 12345
+
+        jwt:
+            secret-key: my-super-secret-key-my-super-secret-key
+            access-token-expiration: 900000
+            refresh-token-expiration: 604800000
+
+# Flyway configuration
+    flyway:
+        enabled: true
+        locations: classpath:db/migration
+
+# Database configuration
+    datasource:
+        url: jdbc:postgresql://localhost:5432/starter_db
+        username: postgres
+        password: password
+        driver-class-name: org.postgresql.Driver
+       
+# JPA configuration
+# spring.jpa.show-sql: true
+    jpa:
+        hibernate:
+            ddl-auto: validate
+# spring.jpa.properties.hibernate.dialect: org.hibernate.dialect.PostgreSQLDialect
+# spring.jpa.properties.hibernate.format_sql: true
+        open-in-view: false
+
+# server port
+server:
+    port: 8000
+            
+# Author Information
+app:
+    author:
+        name: Young Lecturer
+        email: YoungLecturer7@gmail.com
+
+# logging level
+logging:
+    level:
+        '[org.flywaydb]': DEBUG
+    pattern:
+        console: >
+            %d{yyyy-MM-dd HH:mm:ss}
+            [%X{correlationId}]
+            %-5level
+            %logger{36}
+            - %msg%n
+
+# metric, info and health 
+management:
+    endpoints:
+        web:
+            exposure:
+                include: health,info,metrics
+
+    endpoint:
+        health:
+            show-details: always
+            

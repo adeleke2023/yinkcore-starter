@@ -23,6 +23,8 @@ public class SecurityConfiguration {
         .authorizeHttpRequests(
             auth -> auth
                     .requestMatchers("/api/v1/auth/**").permitAll()
+                    .requestMatchers("/actuator/**").permitAll()
+                    .requestMatchers("/swagger-ui/**").permitAll()
                     .requestMatchers("/api/v1/admin/**").authenticated()
                     .anyRequest().authenticated())
         .exceptionHandling(
