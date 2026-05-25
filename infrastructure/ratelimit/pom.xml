@@ -9,7 +9,7 @@
         <relativePath>../../pom.xml</relativePath>
     </parent>
 
-    <artifactId>audit</artifactId>
+    <artifactId>ratelimit</artifactId>
 
     <dependencies>
 
@@ -19,13 +19,7 @@
             <artifactId>spring-context</artifactId>
         </dependency>
 
-        <!-- lombok -->
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <optional>true</optional>
-        </dependency>
-
     </dependencies>
+
 
 </project>

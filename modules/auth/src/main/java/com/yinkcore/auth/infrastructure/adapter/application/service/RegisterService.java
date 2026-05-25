@@ -1,5 +1,6 @@
 package com.yinkcore.auth.infrastructure.adapter.application.service;
 
+import com.yinkcore.auth.application.service.AsyncEmailService;
 import com.yinkcore.auth.infrastructure.adapter.application.dto.RegisterRequest;
 import com.yinkcore.shared.domain.exception.BusinessException;
 import com.yinkcore.user.domain.model.User;
@@ -29,9 +30,15 @@ public class RegisterService {
 
   private final PasswordEncoder passwordEncoder;
 
-  public RegisterService(UserRepository userRepository, PasswordEncoder passwordEncoder) {
+  private final AsyncEmailService asyncEmailService;
+
+  public RegisterService(
+      UserRepository userRepository,
+      PasswordEncoder passwordEncoder,
+      AsyncEmailService asyncEmailService) {
     this.userRepository = userRepository;
     this.passwordEncoder = passwordEncoder;
+    this.asyncEmailService = asyncEmailService;
   }
 
   @Transactional
@@ -42,11 +49,14 @@ public class RegisterService {
       throw new BusinessException("Email already exists");
     }
 
-    User user = new User(
-                  request.firstName(),
-                  request.lastName(),
-                  request.email(),
-                  passwordEncoder.encode(request.password()));
+    User user =
+        new User(
+            request.firstName(),
+            request.lastName(),
+            request.email(),
+            passwordEncoder.encode(request.password()));
+
+    asyncEmailService.sendVerificationEmail(user.getEmail());
 
     userRepository.save(user);
   }

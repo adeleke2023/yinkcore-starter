@@ -25,14 +25,24 @@ spring:
         username: postgres
         password: password
         driver-class-name: org.postgresql.Driver
-       
+
+# Redis Configuration
+    data:
+        redis:
+            host: localhost
+            port: 6379
+            timeout: 2000
+
+
 # JPA configuration
-# spring.jpa.show-sql: true
     jpa:
+        show-sql: true
         hibernate:
             ddl-auto: validate
-# spring.jpa.properties.hibernate.dialect: org.hibernate.dialect.PostgreSQLDialect
-# spring.jpa.properties.hibernate.format_sql: true
+        # properties:
+        #     hibernate.dialect: org.hibernate.dialect.PostgreSQLDialect
+        #     hibernate.format_sql: true
+
         open-in-view: false
 
 # server port

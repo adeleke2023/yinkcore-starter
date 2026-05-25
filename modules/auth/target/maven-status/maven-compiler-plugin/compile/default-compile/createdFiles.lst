@@ -4,6 +4,7 @@ com\yinkcore\auth\infrastructure\adapter\application\dto\LoginRequest.class
 com\yinkcore\auth\infrastructure\security\PermissionEvaluatorServiceImpl.class
 com\yinkcore\auth\domain\model\Permission.class
 com\yinkcore\auth\domain\model\UserRole.class
+com\yinkcore\auth\application\dto\LoginRequest.class
 com\yinkcore\auth\domain\repository\RefreshTokenRepository.class
 com\yinkcore\auth\infrastructure\persistence\RefreshTokenRepositoryAdapter.class
 com\yinkcore\auth\infrastructure\persistence\RolePermissionEmbeddable.class
@@ -17,6 +18,7 @@ com\yinkcore\auth\infrastructure\adapter\application\dto\RegisterRequest.class
 com\yinkcore\auth\infrastructure\persistence\RefreshTokenJpaEntity.class
 com\yinkcore\auth\domain\event\UserRegisteredEvent.class
 com\yinkcore\auth\infrastructure\persistence\RoleJpaEntity.class
+com\yinkcore\auth\application\dto\RegisterRequest.class
 com\yinkcore\auth\presentation\rest\AuthController.class
 com\yinkcore\auth\domain\service\PermissionEvaluatorService.class
 com\yinkcore\auth\infrastructure\adapter\application\service\LoginService.class

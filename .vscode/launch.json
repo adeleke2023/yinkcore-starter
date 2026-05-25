@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ApiServerApplication",
+            "request": "launch",
+            "mainClass": "com.yinkcore.api_server.ApiServerApplication",
+            "projectName": "api-server"
+        },
+        {
+            "type": "java",
             "name": "Spring Boot-ApiServerApplication<ymt-enterprise-starter>",
             "request": "launch",
             "cwd": "${workspaceFolder}",
