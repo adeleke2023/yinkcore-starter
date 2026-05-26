@@ -1,7 +1,9 @@
 package com.yinkcore.auth.infrastructure.adapter.application.service;
 
 import com.yinkcore.auth.application.service.AsyncEmailService;
+import com.yinkcore.auth.domain.event.UserRegisteredEvent;
 import com.yinkcore.auth.infrastructure.adapter.application.dto.RegisterRequest;
+import com.yinkcore.shared.domain.event.DomainEventPublisher;
 import com.yinkcore.shared.domain.exception.BusinessException;
 import com.yinkcore.user.domain.model.User;
 import com.yinkcore.user.domain.repository.UserRepository;
@@ -32,13 +34,18 @@ public class RegisterService {
 
   private final AsyncEmailService asyncEmailService;
 
+  private final DomainEventPublisher domainEventPublisher;
+
   public RegisterService(
       UserRepository userRepository,
       PasswordEncoder passwordEncoder,
-      AsyncEmailService asyncEmailService) {
+      AsyncEmailService asyncEmailService,
+      DomainEventPublisher domainEventPublisher) {
+
     this.userRepository = userRepository;
     this.passwordEncoder = passwordEncoder;
     this.asyncEmailService = asyncEmailService;
+    this.domainEventPublisher = domainEventPublisher;
   }
 
   @Transactional
@@ -57,6 +64,8 @@ public class RegisterService {
             passwordEncoder.encode(request.password()));
 
     asyncEmailService.sendVerificationEmail(user.getEmail());
+
+    domainEventPublisher.publish(new UserRegisteredEvent(user.getId(), user.getEmail()));
 
     userRepository.save(user);
   }

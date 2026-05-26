@@ -58,14 +58,14 @@
         <module>modules/notification</module>
         <module>modules/audit</module>
 
-        <!-- Infrastructure -->
+        <!-- Infrastructure modules -->
         <module>infrastructure/security</module>
         <module>infrastructure/persistence</module>
         <module>infrastructure/logging</module>
         <module>infrastructure/cache</module>
         <module>infrastructure/resilience</module>
         <module>infrastructure/ratelimit</module>
-        <!-- <module>infrastructure/email</module> -->
+        <module>infrastructure/notification</module>
 
     </modules>
 

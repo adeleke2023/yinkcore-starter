@@ -19,6 +19,20 @@
             <artifactId>spring-context</artifactId>
         </dependency>
 
+         <!-- shared kernel -->
+        <dependency>
+            <groupId>com.yinkcore</groupId>
+            <artifactId>shared-kernel</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+         <!-- auth -->
+        <dependency>
+            <groupId>com.yinkcore</groupId>
+            <artifactId>auth</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
     </dependencies>
 
 </project>

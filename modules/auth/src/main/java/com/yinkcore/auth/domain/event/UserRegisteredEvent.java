@@ -3,7 +3,6 @@ package com.yinkcore.auth.domain.event;
 import com.yinkcore.shared.domain.event.DomainEvent;
 import java.util.UUID;
 
-
 /**
  * UserRegisteredEvent is a domain event that represents the occurrence of a user registration in
  * the authentication system. It contains fields for userId and email, which provide information
@@ -22,8 +21,11 @@ public class UserRegisteredEvent extends DomainEvent {
   private final String email;
 
   public UserRegisteredEvent(UUID userId, String email) {
+    
+    super();
     this.userId = userId;
     this.email = email;
+    
   }
 
   public UUID getUserId() {
@@ -33,4 +35,5 @@ public class UserRegisteredEvent extends DomainEvent {
   public String getEmail() {
     return email;
   }
+
 }
