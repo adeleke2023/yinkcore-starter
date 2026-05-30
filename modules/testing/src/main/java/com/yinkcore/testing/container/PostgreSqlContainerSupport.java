@@ -4,6 +4,7 @@ import org.testcontainers.containers.PostgreSQLContainer;
 
 public final class PostgreSqlContainerSupport {
 
+  @SuppressWarnings("resource")
   private static final PostgreSQLContainer<?> CONTAINER =
       new PostgreSQLContainer<>("postgres:17")
           .withDatabaseName("testdb")

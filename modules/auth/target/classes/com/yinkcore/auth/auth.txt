@@ -1,0 +1,25 @@
+#============================================================
+#	Auth module contains
+#============================================================
+
+modules/auth/
+	│
+	├── application/
+	├── domain/
+	├── infrastructure/
+	└── presentation/
+	
+
+* Auth Module Responsibilities
+
+	ONLY authentication concerns:
+
+		- login
+		- logout
+		- refresh tokens
+		- password hashing
+		- token generation
+		- email verification
+		- forgot password
+
+NOTE: profile management - That belongs to user module.

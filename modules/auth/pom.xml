@@ -45,6 +45,13 @@
             <version>${project.version}</version>
         </dependency>
 
+        <!-- outbox module -->
+        <dependency>
+            <groupId>com.yinkcore</groupId>
+            <artifactId>outbox</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
         <!-- security module -->
         <dependency>
             <groupId>com.yinkcore</groupId>

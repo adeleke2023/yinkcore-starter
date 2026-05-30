@@ -93,6 +93,7 @@
         <module>modules/notification</module>
         <module>modules/audit</module>
         <module>modules/testing</module>
+        <module>modules/outbox</module>
 
         <!-- Infrastructure modules -->
         <module>infrastructure/security</module>

@@ -4,6 +4,7 @@ import org.testcontainers.containers.GenericContainer;
 
 public final class RedisContainerSupport {
 
+  @SuppressWarnings("resource")
   private static final GenericContainer<?> CONTAINER =
       new GenericContainer<>("redis:7").withExposedPorts(6379);
 
