@@ -1,6 +1,7 @@
 C:\Users\Mine\Desktop\Spring Workspace\YMT-Enterprise-Architecture-Starter\yinkcore-starter\modules\auth\src\main\java\com\yinkcore\auth\application\dto\LoginRequest.java
 C:\Users\Mine\Desktop\Spring Workspace\YMT-Enterprise-Architecture-Starter\yinkcore-starter\modules\auth\src\main\java\com\yinkcore\auth\application\dto\RegisterRequest.java
 C:\Users\Mine\Desktop\Spring Workspace\YMT-Enterprise-Architecture-Starter\yinkcore-starter\modules\auth\src\main\java\com\yinkcore\auth\application\security\RequirePermission.java
+C:\Users\Mine\Desktop\Spring Workspace\YMT-Enterprise-Architecture-Starter\yinkcore-starter\modules\auth\src\main\java\com\yinkcore\auth\application\service\AsyncEmailService.java
 C:\Users\Mine\Desktop\Spring Workspace\YMT-Enterprise-Architecture-Starter\yinkcore-starter\modules\auth\src\main\java\com\yinkcore\auth\domain\event\UserRegisteredEvent.java
 C:\Users\Mine\Desktop\Spring Workspace\YMT-Enterprise-Architecture-Starter\yinkcore-starter\modules\auth\src\main\java\com\yinkcore\auth\domain\model\Permission.java
 C:\Users\Mine\Desktop\Spring Workspace\YMT-Enterprise-Architecture-Starter\yinkcore-starter\modules\auth\src\main\java\com\yinkcore\auth\domain\model\RefreshToken.java

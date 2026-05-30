@@ -19,6 +19,12 @@
             <artifactId>spring-context</artifactId>
         </dependency>
 
+        <!-- Retry -->
+		<dependency>
+			<groupId>org.springframework.retry</groupId>
+			<artifactId>spring-retry</artifactId>
+		</dependency>
+
     </dependencies>
 
 

@@ -29,12 +29,47 @@
 
         <dependencies>
 
+            <!-- Spring Boot Dependencies -->
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
                 <version>${spring.boot.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+
+            <!-- Testcontainers BOM  -->
+            <dependency>
+                <groupId>org.testcontainers</groupId>
+                <artifactId>testcontainers-bom</artifactId>
+                <version>1.21.3</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            
+            <dependency>
+                <groupId>com.github.tomakehurst</groupId>
+                <artifactId>wiremock-jre8</artifactId>
+                <version>3.0.1</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.jsonwebtoken</groupId>
+                <artifactId>jjwt-api</artifactId>
+                <version>0.12.7</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.jsonwebtoken</groupId>
+                <artifactId>jjwt-impl</artifactId>
+                <version>0.12.7</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.jsonwebtoken</groupId>
+                <artifactId>jjwt-jackson</artifactId>
+                <version>0.12.7</version>
             </dependency>
 
 
@@ -57,6 +92,7 @@
         <module>modules/user</module>
         <module>modules/notification</module>
         <module>modules/audit</module>
+        <module>modules/testing</module>
 
         <!-- Infrastructure modules -->
         <module>infrastructure/security</module>
@@ -65,7 +101,7 @@
         <module>infrastructure/cache</module>
         <module>infrastructure/resilience</module>
         <module>infrastructure/ratelimit</module>
-        <module>infrastructure/notification</module>
+        <!-- <module>infrastructure/notification</module> -->
 
     </modules>
 

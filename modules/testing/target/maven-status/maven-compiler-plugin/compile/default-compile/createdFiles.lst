@@ -1,0 +1,15 @@
+com\yinkcore\testing\database\DatabaseCleaner.class
+com\yinkcore\testing\assertion\DomainAssertions.class
+com\yinkcore\testing\fixture\RandomDataGenerator.class
+com\yinkcore\testing\security\TestJwtFactory.class
+com\yinkcore\testing\wiremock\WireMockSupport.class
+com\yinkcore\testing\container\KafkaContainerSupport.class
+com\yinkcore\testing\wiremock\MockClock.class
+com\yinkcore\testing\assertion\JsonAssertions.class
+com\yinkcore\testing\fixture\FixtureFactory.class
+com\yinkcore\testing\container\RedisContainerSupport.class
+com\yinkcore\testing\security\SecurityTestUtils.class
+com\yinkcore\testing\integration\AbstractApiIntegrationTest.class
+com\yinkcore\testing\integration\AbstractIntegrationTest.class
+com\yinkcore\testing\container\PostgreSqlContainerSupport.class
+com\yinkcore\testing\fixture\TestDataFactory.class

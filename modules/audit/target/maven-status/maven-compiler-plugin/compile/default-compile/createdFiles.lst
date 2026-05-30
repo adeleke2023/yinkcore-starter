@@ -1,1 +1,4 @@
 com\yinkcore\audit\domain\model\AuditLog.class
+com\yinkcore\audit\domain\event\UserLoggedInAuditEvent.class
+com\yinkcore\audit\domain\event\AuditEvent.class
+com\yinkcore\audit\application\listener\AuditEventListener.class
