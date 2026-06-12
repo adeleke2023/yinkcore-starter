@@ -13,6 +13,10 @@
 
     <dependencies>
 
+        <!-- ====================================== -->
+        <!-- 		Spring Packages 				-->
+        <!-- ====================================== -->
+
         <!-- Spring Context -->
         <dependency>
             <groupId>org.springframework</groupId>
@@ -23,6 +27,21 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+
+
+        
+
+        <!-- ====================================== -->
+        <!-- 		YinkCore Modules 				-->
+        <!-- ====================================== -->
+
+        <!-- Shared Kernel -->
+        <dependency>
+            <groupId>com.yinkcore</groupId>
+            <artifactId>shared-kernel</artifactId>
+            <version>${project.version}</version>
         </dependency>
 
     </dependencies>

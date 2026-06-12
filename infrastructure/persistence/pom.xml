@@ -13,6 +13,10 @@
 
     <dependencies>
 
+        <!-- ====================================== -->
+        <!-- 		Spring Packages 				-->
+        <!-- ====================================== -->
+
         <!-- JPA -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -30,6 +34,12 @@
             <groupId>org.flywaydb</groupId>
             <artifactId>flyway-core</artifactId>
         </dependency>
+
+
+
+        <!-- ====================================== -->
+        <!-- 		YinkCore Modules 				-->
+        <!-- ====================================== -->
 
         <!-- Shared Kernel -->
         <dependency>

@@ -26,8 +26,11 @@
     </properties>
 
     <dependencyManagement>
-
         <dependencies>
+
+            <!-- ====================================== -->
+            <!-- 		Default Spring Packages 		-->
+            <!-- ====================================== -->
 
             <!-- Spring Boot Dependencies -->
             <dependency>
@@ -47,31 +50,35 @@
                 <scope>import</scope>
             </dependency>
 
-
+            <!-- wire mock-->
             <dependency>
                 <groupId>com.github.tomakehurst</groupId>
                 <artifactId>wiremock-jre8</artifactId>
                 <version>3.0.1</version>
             </dependency>
 
+            <!-- jjwt api -->
             <dependency>
                 <groupId>io.jsonwebtoken</groupId>
                 <artifactId>jjwt-api</artifactId>
                 <version>0.12.7</version>
             </dependency>
 
+            <!-- jjwt impl-->
             <dependency>
                 <groupId>io.jsonwebtoken</groupId>
                 <artifactId>jjwt-impl</artifactId>
                 <version>0.12.7</version>
             </dependency>
 
+            <!-- jjwt jackson -->
             <dependency>
                 <groupId>io.jsonwebtoken</groupId>
                 <artifactId>jjwt-jackson</artifactId>
                 <version>0.12.7</version>
             </dependency>
 
+            <!-- lombok -->
             <dependency>
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
@@ -80,19 +87,22 @@
 
 
         </dependencies>
-
     </dependencyManagement>
 
-    <!-- ========================= -->
-    <!-- MODULES -->
-    <!-- ========================= -->
+
+    <!-- ====================================== -->
+    <!--      YINKCORE STARTER MODULES          -->
+    <!-- ====================================== -->
 
     <modules>
 
-        <!-- Apps -->
+        <!-- Apps (entry module)-->
         <module>apps/api-server</module>
 
-        <!-- Business Modules -->
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <!--        Business Modules        -->
+        <!-- ++++++++++++++++++++++++++++++ -->
+
         <module>modules/shared-kernel</module>
         <module>modules/auth</module>
         <module>modules/user</module>
@@ -101,7 +111,10 @@
         <module>modules/testing</module>
         <module>modules/outbox</module>
 
-        <!-- Infrastructure modules -->
+        <!-- ++++++++++++++++++++++++++++++++++ -->
+        <!--       Infrastructure Modules       -->
+        <!-- ++++++++++++++++++++++++++++++++++ -->
+
         <module>infrastructure/security</module>
         <module>infrastructure/persistence</module>
         <module>infrastructure/logging</module>
@@ -113,7 +126,6 @@
     </modules>
 
     <build>
-
         <pluginManagement>
 
             <plugins>
@@ -140,7 +152,6 @@
             </plugins>
 
         </pluginManagement>
-
     </build>
 
 </project>

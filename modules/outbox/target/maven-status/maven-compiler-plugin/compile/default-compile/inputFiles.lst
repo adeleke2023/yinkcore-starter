@@ -1,6 +1,6 @@
 C:\Users\Mine\Desktop\Spring Workspace\YMT-Enterprise-Architecture-Starter\yinkcore-starter\modules\outbox\src\main\java\com\yinkcore\outbox\application\service\OutboxService.java
+C:\Users\Mine\Desktop\Spring Workspace\YMT-Enterprise-Architecture-Starter\yinkcore-starter\modules\outbox\src\main\java\com\yinkcore\outbox\domain\enums\OutboxStatus.java
 C:\Users\Mine\Desktop\Spring Workspace\YMT-Enterprise-Architecture-Starter\yinkcore-starter\modules\outbox\src\main\java\com\yinkcore\outbox\domain\model\OutboxEvent.java
-C:\Users\Mine\Desktop\Spring Workspace\YMT-Enterprise-Architecture-Starter\yinkcore-starter\modules\outbox\src\main\java\com\yinkcore\outbox\domain\model\OutboxStatus.java
 C:\Users\Mine\Desktop\Spring Workspace\YMT-Enterprise-Architecture-Starter\yinkcore-starter\modules\outbox\src\main\java\com\yinkcore\outbox\domain\repository\OutboxRepository.java
 C:\Users\Mine\Desktop\Spring Workspace\YMT-Enterprise-Architecture-Starter\yinkcore-starter\modules\outbox\src\main\java\com\yinkcore\outbox\infrastructure\persistence\OutboxJpaRepository.java
 C:\Users\Mine\Desktop\Spring Workspace\YMT-Enterprise-Architecture-Starter\yinkcore-starter\modules\outbox\src\main\java\com\yinkcore\outbox\infrastructure\persistence\OutboxRepositoryAdapter.java

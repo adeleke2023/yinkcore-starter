@@ -26,7 +26,8 @@ import lombok.Setter;
 @AllArgsConstructor
 public class OutboxEvent {
 
-  @Id private UUID id;
+  @Id 
+  private UUID id;
 
   @Column(name = "aggregate_type", nullable = false)
   private String aggregateType;

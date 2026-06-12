@@ -61,18 +61,24 @@
 
 	<dependencies>
 
+		<!-- ====================================== -->
+		<!-- 		Spring Packages 				-->
+		<!-- ====================================== -->
+
 		<!-- Spring Boot -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
+		<!-- lombok -->
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 			<optional>true</optional>
 		</dependency>
 
+		<!-- test -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
@@ -122,42 +128,6 @@
 			<artifactId>flyway-core</artifactId>
 		</dependency>
 
-
-		<!-- Modules -->
-
-		<!-- Shared Kernel -->
-		<dependency>
-			<groupId>com.yinkcore</groupId>
-			<artifactId>shared-kernel</artifactId>
-			<version>${project.parent.version}</version>
-		</dependency>
-
-		<dependency>
-			<groupId>com.yinkcore</groupId>
-			<artifactId>auth</artifactId>
-			<version>${project.parent.version}</version>
-		</dependency>
-
-		<dependency>
-			<groupId>com.yinkcore</groupId>
-			<artifactId>user</artifactId>
-			<version>${project.parent.version}</version>
-		</dependency>
-
-		<!-- persistence -->
-		<dependency>
-			<groupId>com.yinkcore</groupId>
-			<artifactId>persistence</artifactId>
-			<version>${project.parent.version}</version>
-		</dependency>
-
-		<!-- security -->
-		<dependency>
-			<groupId>com.yinkcore</groupId>
-			<artifactId>security</artifactId>
-			<version>${project.parent.version}</version>
-		</dependency>
-
 		<!-- flywaydb -->
 		<dependency>
 			<groupId>org.flywaydb</groupId>
@@ -183,10 +153,51 @@
 		</dependency>
 
 
+		<!-- ====================================== -->
+		<!-- 		Yinkcore Modules 				-->
+		<!-- ====================================== -->
+
+		<!-- Shared Kernel -->
+		<dependency>
+			<groupId>com.yinkcore</groupId>
+			<artifactId>shared-kernel</artifactId>
+			<version>${project.parent.version}</version>
+		</dependency>
+
+		<!-- auth -->
+		<dependency>
+			<groupId>com.yinkcore</groupId>
+			<artifactId>auth</artifactId>
+			<version>${project.parent.version}</version>
+		</dependency>
+
+		<!-- user -->
+		<dependency>
+			<groupId>com.yinkcore</groupId>
+			<artifactId>user</artifactId>
+			<version>${project.parent.version}</version>
+		</dependency>
+
+		<!-- persistence -->
+		<dependency>
+			<groupId>com.yinkcore</groupId>
+			<artifactId>persistence</artifactId>
+			<version>${project.parent.version}</version>
+		</dependency>
+
+		<!-- security -->
+		<dependency>
+			<groupId>com.yinkcore</groupId>
+			<artifactId>security</artifactId>
+			<version>${project.parent.version}</version>
+		</dependency>
+
+
 	</dependencies>
 
 	<build>
 		<plugins>
+
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>

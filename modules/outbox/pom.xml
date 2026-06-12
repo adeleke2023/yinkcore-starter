@@ -16,12 +16,9 @@
 
     <dependencies>
 
-        <!-- shared-kernel -->
-        <dependency>
-            <groupId>com.yinkcore</groupId>
-            <artifactId>shared-kernel</artifactId>
-            <version>${project.version}</version>
-        </dependency>
+        <!-- ====================================== -->
+        <!-- 		Spring Packages 				-->
+        <!-- ====================================== -->
 
         <!-- data jpa -->
         <dependency>
@@ -36,6 +33,18 @@
             <optional>true</optional>
         </dependency>
 
+
+
+        <!-- ====================================== -->
+        <!-- 		Yinkcore Modules 				-->
+        <!-- ====================================== -->
+
+        <!-- shared-kernel -->
+        <dependency>
+            <groupId>com.yinkcore</groupId>
+            <artifactId>shared-kernel</artifactId>
+            <version>${project.version}</version>
+        </dependency>
 
     </dependencies>
 

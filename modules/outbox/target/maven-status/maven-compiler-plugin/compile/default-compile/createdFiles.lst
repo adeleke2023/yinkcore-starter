@@ -1,6 +1,6 @@
 com\yinkcore\outbox\infrastructure\persistence\OutboxRepositoryAdapter.class
+com\yinkcore\outbox\domain\enums\OutboxStatus.class
 com\yinkcore\outbox\domain\model\OutboxEvent.class
-com\yinkcore\outbox\domain\model\OutboxStatus.class
 com\yinkcore\outbox\domain\repository\OutboxRepository.class
 com\yinkcore\outbox\infrastructure\persistence\OutboxJpaRepository.class
 com\yinkcore\outbox\domain\model\OutboxEvent$OutboxEventBuilder.class

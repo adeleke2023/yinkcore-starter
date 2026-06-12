@@ -13,12 +13,9 @@
 
     <dependencies>
 
-        <!-- Shared Kernel -->
-        <dependency>
-            <groupId>com.yinkcore</groupId>
-            <artifactId>shared-kernel</artifactId>
-            <version>${project.version}</version>
-        </dependency>
+        <!-- ====================================== -->
+        <!-- 		Spring Packages 				-->
+        <!-- ====================================== -->
 
         <!-- Redis -->
         <dependency>
@@ -36,6 +33,18 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-aop</artifactId>
+        </dependency>
+
+
+        <!-- ====================================== -->
+        <!-- 		YinkCore Modules 				-->
+        <!-- ====================================== -->
+
+        <!-- Shared Kernel -->
+        <dependency>
+            <groupId>com.yinkcore</groupId>
+            <artifactId>shared-kernel</artifactId>
+            <version>${project.version}</version>
         </dependency>
 
     </dependencies>

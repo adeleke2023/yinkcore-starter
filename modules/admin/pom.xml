@@ -13,11 +13,29 @@
 
     <dependencies>
 
+        <!-- ====================================== -->
+		<!-- 		Spring Packages 				-->
+		<!-- ====================================== -->
+
         <!-- Spring Context -->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
         </dependency>
+
+
+
+
+        <!-- ====================================== -->
+		<!-- 		Yinkcore Modules 				-->
+		<!-- ====================================== -->
+
+        <!-- Shared Kernel -->
+		<dependency>
+			<groupId>com.yinkcore</groupId>
+			<artifactId>shared-kernel</artifactId>
+			<version>${project.parent.version}</version>
+		</dependency>
 
     </dependencies>
 

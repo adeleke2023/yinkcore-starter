@@ -13,20 +13,30 @@
 
     <dependencies>
 
+        <!-- ====================================== -->
+        <!-- 		Spring Packages 				-->
+        <!-- ====================================== -->
+
         <!-- Spring Context -->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
         </dependency>
 
-         <!-- shared kernel -->
+
+
+        <!-- ====================================== -->
+        <!-- 		Yinkcore Modules 				-->
+        <!-- ====================================== -->
+
+        <!-- shared kernel -->
         <dependency>
             <groupId>com.yinkcore</groupId>
             <artifactId>shared-kernel</artifactId>
             <version>${project.version}</version>
         </dependency>
 
-         <!-- auth -->
+        <!-- auth -->
         <dependency>
             <groupId>com.yinkcore</groupId>
             <artifactId>auth</artifactId>

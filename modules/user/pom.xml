@@ -13,24 +13,14 @@
 
     <dependencies>
 
+        <!-- ====================================== -->
+        <!-- 		Spring Packages 				-->
+        <!-- ====================================== -->
+
         <!-- Spring Context -->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
-        </dependency>
-
-        <!-- shared kernel -->
-        <dependency>
-            <groupId>com.yinkcore</groupId>
-            <artifactId>shared-kernel</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-
-        <!-- cache -->
-        <dependency>
-            <groupId>com.yinkcore</groupId>
-            <artifactId>cache</artifactId>
-            <version>${project.version}</version>
         </dependency>
 
         <!-- data jpa -->
@@ -44,6 +34,25 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <optional>true</optional>
+        </dependency>
+
+
+        <!-- ====================================== -->
+        <!-- 		YinkCore Modules 				-->
+        <!-- ====================================== -->
+
+        <!-- shared kernel -->
+        <dependency>
+            <groupId>com.yinkcore</groupId>
+            <artifactId>shared-kernel</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <!-- cache -->
+        <dependency>
+            <groupId>com.yinkcore</groupId>
+            <artifactId>cache</artifactId>
+            <version>${project.version}</version>
         </dependency>
 
     </dependencies>
