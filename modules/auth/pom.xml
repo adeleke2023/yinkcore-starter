@@ -19,7 +19,7 @@
             <artifactId>spring-context</artifactId>
         </dependency>
 
-         <!-- spring retry -->
+        <!-- spring retry -->
         <dependency>
             <groupId>org.springframework.retry</groupId>
             <artifactId>spring-retry</artifactId>
@@ -63,7 +63,7 @@
         <dependency>
             <groupId>com.yinkcore</groupId>
             <artifactId>testing</artifactId>
-             <version>${project.version}</version>
+            <version>${project.version}</version>
             <scope>test</scope>
         </dependency>
 
@@ -81,5 +81,28 @@
         </dependency>
 
     </dependencies>
+
+
+    <build>
+
+        <plugins>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <annotationProcessorPaths>
+                        <path>
+                            <groupId>org.projectlombok</groupId>
+                            <artifactId>lombok</artifactId>
+                            <version>${lombok.version}</version>
+                        </path>
+                    </annotationProcessorPaths>
+                </configuration>
+            </plugin>
+
+        </plugins>
+        
+    </build>
 
 </project>

@@ -22,6 +22,5 @@ C:\Users\Mine\Desktop\Spring Workspace\YMT-Enterprise-Architecture-Starter\yinkc
 C:\Users\Mine\Desktop\Spring Workspace\YMT-Enterprise-Architecture-Starter\yinkcore-starter\modules\shared-kernel\src\main\java\com\yinkcore\shared\infrastructure\event\SpringDomainEventPublisher.java
 C:\Users\Mine\Desktop\Spring Workspace\YMT-Enterprise-Architecture-Starter\yinkcore-starter\modules\shared-kernel\src\main\java\com\yinkcore\shared\infrastructure\id\IdGenerator.java
 C:\Users\Mine\Desktop\Spring Workspace\YMT-Enterprise-Architecture-Starter\yinkcore-starter\modules\shared-kernel\src\main\java\com\yinkcore\shared\infrastructure\id\UuidGenerator.java
-C:\Users\Mine\Desktop\Spring Workspace\YMT-Enterprise-Architecture-Starter\yinkcore-starter\modules\shared-kernel\src\main\java\com\yinkcore\shared\infrastructure\outbox\OutboxEventJpaEntity.java
 C:\Users\Mine\Desktop\Spring Workspace\YMT-Enterprise-Architecture-Starter\yinkcore-starter\modules\shared-kernel\src\main\java\com\yinkcore\shared\infrastructure\time\ClockProvider.java
 C:\Users\Mine\Desktop\Spring Workspace\YMT-Enterprise-Architecture-Starter\yinkcore-starter\modules\shared-kernel\src\main\java\com\yinkcore\shared\infrastructure\time\SystemClockProvider.java

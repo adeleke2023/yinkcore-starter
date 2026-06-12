@@ -44,5 +44,6 @@ public class OutboxEvent {
   private String payload;
 
   @Enumerated(EnumType.STRING)
+  @Column(name = "status")
   private OutboxStatus status;
 }

@@ -1,7 +1,9 @@
-package com.yinkcore.auth.infrastructure.persistence;
+package com.yinkcore.auth.infrastructure.persistence.adapter;
 
 import com.yinkcore.auth.domain.model.RefreshToken;
 import com.yinkcore.auth.domain.repository.RefreshTokenRepository;
+import com.yinkcore.auth.infrastructure.persistence.repository.RefreshTokenJpaRepository;
+
 import java.util.Optional;
 import org.springframework.stereotype.Repository;
 

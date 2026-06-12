@@ -4,14 +4,16 @@ import com.yinkcore.outbox.domain.model.OutboxEvent;
 import com.yinkcore.outbox.domain.model.OutboxStatus;
 import com.yinkcore.outbox.domain.repository.OutboxRepository;
 import java.util.List;
-import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Repository;
 
 @Repository
-@RequiredArgsConstructor
 public class OutboxRepositoryAdapter implements OutboxRepository {
 
   private final OutboxJpaRepository repository;
+
+  public OutboxRepositoryAdapter(OutboxJpaRepository repository) {
+    this.repository = repository;
+  }
 
   @Override
   public OutboxEvent save(OutboxEvent event) {

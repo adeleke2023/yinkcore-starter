@@ -1,6 +1,6 @@
 package com.yinkcore.auth.application.security;
 
-import com.yinkcore.auth.domain.model.Permission;
+// import com.yinkcore.auth.domain.model.Permission;
 
 import java.lang.annotation.*;
 
@@ -8,6 +8,6 @@ import java.lang.annotation.*;
 @Retention(RetentionPolicy.RUNTIME)
 public @interface RequirePermission {
 
-    Permission value();
+    // Permission value();
 
 }

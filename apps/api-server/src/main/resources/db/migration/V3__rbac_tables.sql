@@ -3,10 +3,17 @@ CREATE TABLE roles (
     name VARCHAR(100) NOT NULL UNIQUE
 );
 
+CREATE TABLE permissions (
+    id UUID PRIMARY KEY,
+    name VARCHAR(100) NOT NULL UNIQUE,
+    description VARCHAR(255)
+);
+
 CREATE TABLE role_permissions (
     role_id UUID NOT NULL,
-    permission VARCHAR(100) NOT NULL,
-    CONSTRAINT fk_role_permissions_role FOREIGN KEY (role_id) REFERENCES roles (id)
+    permission_id UUID NOT NULL,
+    CONSTRAINT fk_role_permissions_role FOREIGN KEY (role_id) REFERENCES roles (id),
+    CONSTRAINT fk_role_permissions_permission FOREIGN KEY (permission_id) REFERENCES permissions (id)
 );
 
 CREATE TABLE user_roles (

@@ -1,22 +1,31 @@
 package com.yinkcore.auth.domain.model;
 
-public enum Permission {
+import java.util.UUID;
 
-    USER_READ,
-    USER_CREATE,
-    USER_UPDATE,
-    USER_DELETE,
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
-    ROLE_READ,
-    ROLE_CREATE,
-    ROLE_UPDATE,
-    ROLE_DELETE,
+@Entity
+@Table(name = "permissions")
+@Getter
+@Setter
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+@EqualsAndHashCode
+public class Permission {
 
-    PERMISSION_READ,
-    PERMISSION_ASSIGN,
+    @Id
+    private UUID id;
 
-    AUDIT_READ,
+    private String name;
 
-    SYSTEM_ADMIN
-
+    private String description;
 }

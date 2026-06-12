@@ -23,5 +23,4 @@ com\yinkcore\shared\domain\exception\DomainException.class
 com\yinkcore\shared\application\event\DomainEvent.class
 com\yinkcore\shared\infrastructure\time\SystemClockProvider.class
 com\yinkcore\shared\application\response\ApiResponse.class
-com\yinkcore\shared\infrastructure\outbox\OutboxEventJpaEntity.class
 com\yinkcore\shared\domain\event\DomainEventPublisher.class

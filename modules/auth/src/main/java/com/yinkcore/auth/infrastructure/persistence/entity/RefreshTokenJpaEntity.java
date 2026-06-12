@@ -1,4 +1,4 @@
-package com.yinkcore.auth.infrastructure.persistence;
+package com.yinkcore.auth.infrastructure.persistence.entity;
 
 import jakarta.persistence.*;
 
