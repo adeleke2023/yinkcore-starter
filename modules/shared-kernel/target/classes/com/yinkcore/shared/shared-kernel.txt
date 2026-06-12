@@ -1,0 +1,89 @@
+#============================================================
+#				Shared Kernel Module 🧠
+#============================================================
+
+One of the most important modules.
+
+Contains:
+
+	- base exceptions
+	- common DTOs
+	- utility classes
+	- event abstractions
+	- response wrappers
+	- pagination models
+	- constants
+	
+modules/shared-kernel/
+		│
+		├── application/
+		├── domain/
+		├── exception/
+		├── event/
+		├── response/
+		├── pagination/
+		└── util/
+
+NOTE: Huge mistake many developers make.
+
+Shared kernel should contain ONLY:
+
+truly shared concepts
+
+
+NOTE:	random helper dumping ground.
+Keep it disciplined.
+
+
+
+* Shared Kernel + Common Foundation 🧠🔥
+
+This phase creates the backbone of the entire platform.
+
+Everything you build later depends on the quality of this layer.
+
+The shared kernel should provide:
+	- consistency
+	- standardization
+	- reusable abstractions
+	- architectural discipline
+
+This is where enterprise systems start becoming elegant instead of chaotic.
+
+1. Shared Kernel Mission
+
+The shared kernel contains:
+	- cross-cutting abstractions
+	- universally shared concepts
+	- foundational utilities
+	- enterprise conventions
+
+NOT business-specific logic.
+
+
+* Final Shared Kernel Structure
+	
+	modules/shared-kernel/
+		│
+		├── application/
+		│   ├── result/
+		│   ├── validation/
+		│   └── clock/
+		│
+		├── domain/
+		│   ├── base/
+		│   ├── event/
+		│   ├── exception/
+		│   └── valueobject/
+		│
+		├── infrastructure/
+		│   └── config/
+		│
+		├── web/
+		│   ├── response/
+		│   ├── exception/
+		│   └── pagination/
+		│
+		├── constants/
+		├── util/
+		└── pom.xml
