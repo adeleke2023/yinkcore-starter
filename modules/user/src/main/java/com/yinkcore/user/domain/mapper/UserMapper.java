@@ -1,6 +1,7 @@
-package com.yinkcore.user.infrastructure.persistence;
+package com.yinkcore.user.domain.mapper;
 
 import com.yinkcore.user.domain.model.User;
+import com.yinkcore.user.infrastructure.persistence.entity.UserJpaEntity;
 
 /**
  * UserMapper is a utility class that provides methods for mapping between the User domain model and

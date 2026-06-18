@@ -1,7 +1,6 @@
 com\yinkcore\user\domain\repository\UserRepository.class
-com\yinkcore\user\domain\model\UserStatus.class
-com\yinkcore\user\infrastructure\persistence\UserJpaRepository.class
-com\yinkcore\user\infrastructure\persistence\UserRepositoryAdapter.class
+com\yinkcore\user\infrastructure\persistence\repositories\UserJpaRepository.class
+com\yinkcore\user\domain\enums\UserStatus.class
+com\yinkcore\user\domain\mapper\UserMapper.class
 com\yinkcore\user\domain\model\User.class
-com\yinkcore\user\infrastructure\persistence\UserJpaEntity.class
-com\yinkcore\user\infrastructure\persistence\UserMapper.class
+com\yinkcore\user\infrastructure\persistence\entity\UserJpaEntity.class

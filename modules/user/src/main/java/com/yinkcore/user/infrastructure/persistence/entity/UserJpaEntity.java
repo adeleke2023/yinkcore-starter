@@ -1,6 +1,4 @@
-package com.yinkcore.user.infrastructure.persistence;
-
-import com.yinkcore.user.domain.model.UserStatus;
+package com.yinkcore.user.infrastructure.persistence.entity;
 
 import jakarta.persistence.*;
 import lombok.Getter;
@@ -8,6 +6,9 @@ import lombok.Setter;
 
 import java.time.Instant;
 import java.util.UUID;
+
+import com.yinkcore.user.domain.enums.UserStatus;
+import com.yinkcore.user.infrastructure.persistence.repositories.UserJpaRepository;
 
 
 /**

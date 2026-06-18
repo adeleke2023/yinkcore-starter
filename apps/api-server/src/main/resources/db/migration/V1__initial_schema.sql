@@ -19,7 +19,7 @@ CREATE TABLE users (
     phone_number VARCHAR(30) NOT NULL UNIQUE,
     email VARCHAR(255) NOT NULL UNIQUE,
     password VARCHAR(255) NOT NULL,
-    status VARCHAR(40) DEFAULT 'PENDING',
+    status VARCHAR(40) DEFAULT 'PENDING_VERIFICATION',
     community_status VARCHAR(40) DEFAULT 'GUEST',
     business_status VARCHAR(40) DEFAULT 'NONE',
     created_at TIMESTAMP NOT NULL,

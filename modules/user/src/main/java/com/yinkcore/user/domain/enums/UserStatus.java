@@ -1,4 +1,4 @@
-package com.yinkcore.user.domain.model;
+package com.yinkcore.user.domain.enums;
 
 /**
  * Enum representing the status of a user.

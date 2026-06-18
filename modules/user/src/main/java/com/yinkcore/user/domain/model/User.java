@@ -1,6 +1,7 @@
 package com.yinkcore.user.domain.model;
 
 import com.yinkcore.shared.domain.model.AuditableEntity;
+import com.yinkcore.user.domain.enums.UserStatus;
 
 import lombok.Getter;
 import lombok.Setter;
