@@ -4,7 +4,8 @@ import com.yinkcore.auth.infrastructure.adapter.application.dto.AuthResponse;
 import com.yinkcore.auth.infrastructure.adapter.application.dto.LoginRequest;
 import com.yinkcore.security.service.JwtService;
 import com.yinkcore.shared.domain.exception.BusinessException;
-import com.yinkcore.user.domain.repository.UserRepository;
+import com.yinkcore.user.domain.repository.service.UserRepository;
+
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 

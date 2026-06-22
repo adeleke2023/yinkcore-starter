@@ -2,7 +2,9 @@ package com.yinkcore.outbox.infrastructure.persistence;
 
 import com.yinkcore.outbox.domain.enums.OutboxStatus;
 import com.yinkcore.outbox.domain.model.OutboxEvent;
-import com.yinkcore.outbox.domain.repository.OutboxRepository;
+import com.yinkcore.outbox.domain.repository.service.OutboxRepository;
+import com.yinkcore.outbox.infrastructure.persistence.repository.OutboxJpaRepository;
+
 import java.util.List;
 import org.springframework.stereotype.Repository;
 

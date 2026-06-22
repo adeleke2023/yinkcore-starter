@@ -1,4 +1,4 @@
-package com.yinkcore.user.domain.repository;
+package com.yinkcore.user.domain.repository.service;
 
 import com.yinkcore.user.domain.model.User;
 

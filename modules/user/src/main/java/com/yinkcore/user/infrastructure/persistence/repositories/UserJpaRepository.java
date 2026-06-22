@@ -4,6 +4,7 @@ import java.util.Optional;
 import java.util.UUID;
 import org.springframework.data.jpa.repository.JpaRepository;
 
+import com.yinkcore.user.application.serviceAdapter.UserRepositoryAdapter;
 import com.yinkcore.user.infrastructure.persistence.entity.UserJpaEntity;
 
 

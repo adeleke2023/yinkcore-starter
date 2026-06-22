@@ -3,10 +3,11 @@ package com.yinkcore.auth.infrastructure.adapter.application.service;
 import com.yinkcore.auth.application.service.AsyncEmailService;
 import com.yinkcore.auth.domain.event.UserRegisteredEvent;
 import com.yinkcore.auth.infrastructure.adapter.application.dto.RegisterRequest;
-import com.yinkcore.outbox.application.service.OutboxService;
+import com.yinkcore.outbox.application.serviceAdapter.OutboxService;
 import com.yinkcore.shared.domain.exception.BusinessException;
 import com.yinkcore.user.domain.model.User;
-import com.yinkcore.user.domain.repository.UserRepository;
+import com.yinkcore.user.domain.repository.service.UserRepository;
+
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

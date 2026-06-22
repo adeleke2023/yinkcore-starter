@@ -1,4 +1,4 @@
-package com.yinkcore.user.infrastructure.persistence.repositories;
+package com.yinkcore.user.application.serviceAdapter;
 
 import java.util.Optional;
 import java.util.UUID;
@@ -6,7 +6,8 @@ import java.util.UUID;
 import org.springframework.stereotype.Repository;
 
 import com.yinkcore.user.domain.model.User;
-import com.yinkcore.user.domain.repository.UserRepository;
+import com.yinkcore.user.domain.repository.service.UserRepository;
+import com.yinkcore.user.infrastructure.persistence.repositories.UserJpaRepository;
 
 import lombok.RequiredArgsConstructor;
 

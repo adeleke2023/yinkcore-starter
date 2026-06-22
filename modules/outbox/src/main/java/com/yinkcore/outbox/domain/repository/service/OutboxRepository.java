@@ -1,4 +1,4 @@
-package com.yinkcore.outbox.domain.repository;
+package com.yinkcore.outbox.domain.repository.service;
 
 import com.yinkcore.outbox.domain.enums.OutboxStatus;
 import com.yinkcore.outbox.domain.model.OutboxEvent;

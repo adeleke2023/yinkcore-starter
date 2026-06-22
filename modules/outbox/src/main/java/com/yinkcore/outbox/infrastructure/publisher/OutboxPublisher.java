@@ -2,7 +2,8 @@ package com.yinkcore.outbox.infrastructure.publisher;
 
 import com.yinkcore.outbox.domain.enums.OutboxStatus;
 import com.yinkcore.outbox.domain.model.OutboxEvent;
-import com.yinkcore.outbox.domain.repository.OutboxRepository;
+import com.yinkcore.outbox.domain.repository.service.OutboxRepository;
+
 import java.time.Instant;
 import java.util.List;
 import lombok.RequiredArgsConstructor;

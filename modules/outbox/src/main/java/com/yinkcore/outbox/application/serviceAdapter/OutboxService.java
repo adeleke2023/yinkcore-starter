@@ -1,9 +1,10 @@
-package com.yinkcore.outbox.application.service;
+package com.yinkcore.outbox.application.serviceAdapter;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.yinkcore.outbox.domain.enums.OutboxStatus;
 import com.yinkcore.outbox.domain.model.OutboxEvent;
-import com.yinkcore.outbox.domain.repository.OutboxRepository;
+import com.yinkcore.outbox.domain.repository.service.OutboxRepository;
+
 import java.time.Instant;
 import java.util.UUID;
 import lombok.RequiredArgsConstructor;

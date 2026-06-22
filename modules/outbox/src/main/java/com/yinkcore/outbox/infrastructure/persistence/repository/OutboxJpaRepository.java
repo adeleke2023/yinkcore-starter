@@ -1,4 +1,4 @@
-package com.yinkcore.outbox.infrastructure.persistence;
+package com.yinkcore.outbox.infrastructure.persistence.repository;
 
 import com.yinkcore.outbox.domain.enums.OutboxStatus;
 import com.yinkcore.outbox.domain.model.OutboxEvent;
